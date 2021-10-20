@@ -1,0 +1,52 @@
+2021-09-07 09:10:29 pid:1 Worker process terminated
+2021-09-07 09:10:59 pid:1 Worker process terminated
+2021-09-07 09:11:14 pid:1 think\exception\ErrorException: Undefined variable: urls in D:\phpstudy_pro\WWW\1212421\cmf\cmf\app\command\Timer.php:69
+Stack trace:
+#0 D:\phpstudy_pro\WWW\1212421\cmf\cmf\app\command\Timer.php(69): think\initializer\Error->appError(8, 'Undefined varia...', 'D:\\phpstudy_pro...', 69, Array)
+#1 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\workerman\workerman\Worker.php(2415): app\command\Timer->start(Object(Workerman\Worker))
+#2 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#3 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#4 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#5 D:\phpstudy_pro\WWW\1212421\cmf\cmf\app\command\Timer.php(52): Workerman\Worker::runAll()
+#6 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\framework\src\think\console\Command.php(210): app\command\Timer->execute(Object(think\console\Input), Object(think\console\Output))
+#7 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\framework\src\think\Console.php(655): think\console\Command->run(Object(think\console\Input), Object(think\console\Output))
+#8 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\framework\src\think\Console.php(314): think\Console->doRunCommand(Object(app\command\Timer), Object(think\console\Input), Object(think\console\Output))
+#9 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\framework\src\think\Console.php(251): think\Console->doRun(Object(think\console\Input), Object(think\console\Output))
+#10 D:\phpstudy_pro\WWW\1212421\cmf\cmf\think(36): think\Console->run()
+#11 {main}
+2021-09-07 09:11:15 pid:1 Worker process terminated
+2021-09-07 09:11:58 pid:1 Worker process terminated
+2021-09-07 09:12:17 pid:1 Worker process terminated
+2021-09-07 10:47:31 pid:1 think\db\exception\PDOException: SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+ in D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\think-orm\src\db\PDOConnection.php:768
+Stack trace:
+#0 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\think-orm\src\db\connector\Mysql.php(66): think\db\PDOConnection->getPDOStatement('SHOW FULL COLUM...')
+#1 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\think-orm\src\db\PDOConnection.php(396): think\db\connector\Mysql->getFields('`t_resources_co...')
+#2 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\think-orm\src\db\PDOConnection.php(336): think\db\PDOConnection->getTableFieldsInfo('t_resources_con...')
+#3 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\think-orm\src\db\PDOConnection.php(383): think\db\PDOConnection->getSchemaInfo('t_resources_con...')
+#4 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\think-orm\src\db\PDOConnection.php(433): think\db\PDOConnection->getTableInfo('t_resources_con...', 'pk')
+#5 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\think-orm\src\db\Query.php(291): think\db\PDOConnection->getPk('t_resources_con...')
+#6 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\think-orm\src\db\concern\WhereQuery.php(442): think\db\Query->getPk()
+#7 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\think-orm\src\db\concern\WhereQuery.php(422): think\db\BaseQuery->whereEq('msgKey', 'auto_play_off_s...')
+#8 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\think-orm\src\db\concern\WhereQuery.php(386): think\db\BaseQuery->parseWhereItem('AND', 'msgKey', 'auto_play_off_s...', NULL, Array)
+#9 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\think-orm\src\db\concern\WhereQuery.php(41): think\db\BaseQuery->parseWhereExp('AND', 'msgKey', 'auto_play_off_s...', NULL, Array)
+#10 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\thinkcmf\cmf\src\common.php(2415): think\db\BaseQuery->where('msgKey', 'auto_play_off_s...')
+#11 D:\phpstudy_pro\WWW\1212421\cmf\cmf\app\command\Timer.php(64): auto_play_off()
+#12 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\workerman\workerman\Worker.php(2415): app\command\Timer->start(Object(Workerman\Worker))
+#13 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#15 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#16 D:\phpstudy_pro\WWW\1212421\cmf\cmf\app\command\Timer.php(52): Workerman\Worker::runAll()
+#17 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\framework\src\think\console\Command.php(210): app\command\Timer->execute(Object(think\console\Input), Object(think\console\Output))
+#18 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\framework\src\think\Console.php(655): think\console\Command->run(Object(think\console\Input), Object(think\console\Output))
+#19 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\framework\src\think\Console.php(314): think\Console->doRunCommand(Object(app\command\Timer), Object(think\console\Input), Object(think\console\Output))
+#20 D:\phpstudy_pro\WWW\1212421\cmf\cmf\vendor\topthink\framework\src\think\Console.php(251): think\Console->doRun(Object(think\console\Input), Object(think\console\Output))
+#21 D:\phpstudy_pro\WWW\1212421\cmf\cmf\think(36): think\Console->run()
+#22 {main}
+2021-09-07 10:47:32 pid:1 Worker process terminated
+2021-09-07 11:19:45 pid:1 Worker process terminated
+2021-09-07 11:36:16 pid:1 Worker process terminated
+2021-09-07 11:55:02 pid:1 Worker process terminated
+2021-09-07 12:34:26 pid:1 Worker process terminated
+2021-09-07 12:37:26 pid:1 Worker process terminated
+2021-09-07 13:35:20 pid:1 Worker process terminated

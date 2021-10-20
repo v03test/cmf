@@ -1,0 +1,13 @@
+[2021-01-18T09:26:27+08:00][error] [0]数据库配置未定义:myslq1
+[2021-01-18T09:27:29+08:00][error] [0]模板文件不存在:themes/admin_simpleboot3/admin\users\lists.html
+[2021-01-18T09:38:45+08:00][error] [8]未定义变量: val
+[2021-01-18T11:23:18+08:00][error] [10500]method not exist:think\db\Query->setField
+[2021-01-18T11:23:19+08:00][error] [10500]method not exist:think\db\Query->setField
+[2021-01-18T11:23:20+08:00][error] [10500]method not exist:think\db\Query->setField
+[2021-01-18T11:23:38+08:00][error] [10500]method not exist:think\db\Query->setField
+[2021-01-18T11:25:03+08:00][error] [10500]method not exist:think\db\Query->setField
+[2021-01-18T11:25:33+08:00][error] [10500]method not exist:think\db\Query->setField
+[2021-01-18T11:25:55+08:00][error] [10500]method not exist:think\db\Query->setField
+[2021-01-18T11:26:28+08:00][error] [10500]method not exist:think\db\Query->setField
+[2021-01-18T14:37:41+08:00][error] [0]模板文件不存在:themes/admin_simpleboot3/admin\statistics\add_data.html
+[2021-01-18T16:35:30+08:00][error] [8]未定义变量: start_time
